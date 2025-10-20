@@ -36,6 +36,43 @@
 
  <div class="container" style="margin-left: 30px">
   <h1>Ini adalah halaman Mahasiswa</h1>   
+
+<table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+  <thead>
+    <tr>
+      <th>NIM</th>
+      <th>Nama Mahasiswa</th>
+      <th>Jenis Kelamin</th>
+      <th>Tanggal Lahir</th>
+      <th colspan="2">TTL</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td>Adel</td>
+      <td>Wanita</td>
+      <td>16-11-2004</td>
+      <td rowspan="3">Kota Medan</td>
+    </tr>
+
+    <tr>
+      <td>02</td>
+      <td>Park Jeongwoo</td>
+      <td>Laki-Laki</td>
+      <td>28-09-2004</td>
+    </tr>
+
+    <tr>
+      <td>03</td>
+      <td>Najwa Alifah Zulfikar Damanik</td>
+      <td>Wanita</td>
+      <td>05-07-2006</td>
+    </tr>
+  </tbody>
+</table>
+
  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
