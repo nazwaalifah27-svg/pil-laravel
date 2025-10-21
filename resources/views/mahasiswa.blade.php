@@ -43,33 +43,26 @@
       <th>NIM</th>
       <th>Nama Mahasiswa</th>
       <th>Jenis Kelamin</th>
-      <th>Tanggal Lahir</th>
       <th colspan="2">TTL</th>
     </tr>
   </thead>
-
   <tbody>
-    <tr>
-      <td>01</td>
-      <td>Adel</td>
-      <td>Wanita</td>
-      <td>16-11-2004</td>
-      <td rowspan="3">Kota Medan</td>
-    </tr>
-
-    <tr>
-      <td>02</td>
-      <td>Park Jeongwoo</td>
-      <td>Laki-Laki</td>
-      <td>28-09-2004</td>
-    </tr>
-
-    <tr>
-      <td>03</td>
-      <td>Najwa Alifah Zulfikar Damanik</td>
-      <td>Wanita</td>
-      <td>05-07-2006</td>
-    </tr>
+    <?php 
+      $nilai_awal = 0; 
+      $jumlah = 4;
+      $npm = ['01', '02', '03', '04'];
+      $nama = ['Najwa','Alifah','Zulfikar','Damanik'];
+    ?>
+    @while ($nilai_awal < $jumlah)
+      <tr>
+        <td>{{ $npm[$nilai_awal] }}</td>
+        <td>{{ $nama[$nilai_awal] }}</td>
+        <td>Wanita</td>
+        <td>16-11-2004</td>
+        <td>Kota Medan</td>
+      </tr>
+      <?php $nilai_awal++ ?>
+    @endwhile
   </tbody>
 </table>
 
