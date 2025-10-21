@@ -35,9 +35,9 @@
 </nav>
 
  <div class="container" style="margin-left: 30px">
-  <h1>Ini adalah halaman Mahasiswa</h1>   
+  <h1>Ini adalah halaman Mahasiswa</h1>
 
-<table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
+  <table class="table table-danger table-sm table-hover table-striped table-bordered text-center">
   <thead>
     <tr>
       <th>NIM</th>
@@ -48,21 +48,18 @@
   </thead>
   <tbody>
     <?php 
-      $nilai_awal = 0; 
-      $jumlah = 4;
       $npm = ['01', '02', '03', '04'];
-      $nama = ['Najwa','Alifah','Zulfikar','Damanik'];
+      $nama = ['Najwa', 'Alifah', 'Zulfikar', 'Damanik'];
     ?>
-    @while ($nilai_awal < $jumlah)
+
+    @for ($i = 0; $i < count($npm); $i++)
       <tr>
-        <td>{{ $npm[$nilai_awal] }}</td>
-        <td>{{ $nama[$nilai_awal] }}</td>
+        <td>{{ $npm[$i] }}</td>
+        <td>{{ $nama[$i] }}</td>
         <td>Wanita</td>
-        <td>16-11-2004</td>
         <td>Kota Medan</td>
       </tr>
-      <?php $nilai_awal++ ?>
-    @endwhile
+    @endfor
   </tbody>
 </table>
 
